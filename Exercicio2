@@ -1,0 +1,21 @@
+package datas;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Exercicio2 {
+	public static void main(String[] args) {
+		Contagemtempo(2026, 1, 4);
+	}
+
+	public static void Contagemtempo(int dia, int mes, int ano) {
+		LocalDate presente = LocalDate.now();
+		LocalDate futuro = LocalDate.of(dia, mes, ano);
+		Period periodo = Period.between(presente, futuro);
+		int dias = periodo.getDays();
+		int meses = periodo.getMonths();
+		int anos = periodo.getYears();
+		
+		System.out.println("Falta " + periodo.getYears()+ " ano(s), "+ periodo.getMonths() + " mes(es) e " + periodo.getDays()+ " dia(s) para essa data em 2026.");
+	}
+}
