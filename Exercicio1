@@ -22,7 +22,6 @@ public class Exercicio1 {
 	}
 	public static void Dataformatada() {
 		DateFormat dataFull = DateFormat.getDateInstance(DateFormat.FULL);
-		SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/y HH:mm:ss");
 		SimpleDateFormat hora = new SimpleDateFormat("HH");
 		SimpleDateFormat minutos = new SimpleDateFormat("m");
 		SimpleDateFormat diaSemana = new SimpleDateFormat("EEEE");
