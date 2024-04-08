@@ -7,7 +7,6 @@ public class Exercicio2 {
 	public static void main(String[] args) {
 		Contagemtempo(2026, 1, 4);
 	}
-
 	public static void Contagemtempo(int dia, int mes, int ano) {
 		LocalDate presente = LocalDate.now();
 		LocalDate futuro = LocalDate.of(dia, mes, ano);
